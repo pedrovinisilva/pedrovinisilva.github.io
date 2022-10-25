@@ -16,7 +16,7 @@
        {
     color: rgb(110, 18, 18);
     padding-top: 10px;
-    width: 100%;
+    width: 99%;
        }
 
     h2:hover {
@@ -109,7 +109,7 @@
 }
 
 .image {
-  background-image: url(imgs/tasty-appetizing-vegetarian-pizza-on-260nw-1297088749.webp);
+  background-image: url(/imgs/tasty-appetizing-vegetarian-pizza-on-260nw-1297088749.webp);
   background-size: repeat;
   background-position: center;
   height: 150px;
@@ -117,7 +117,7 @@
 }
 
 article {
-  background-image: url(imgs/5ee1be17c7a1f8d3925ceb50_tipo-oitava-quadrada.jpg);
+  background-image: url(/imgs/5ee1be17c7a1f8d3925ceb50_tipo-oitava-quadrada.jpg);
   background-size:repeat;
   background-position: center;
   
@@ -198,7 +198,7 @@ li{
         target="_blank"
       >
         <img
-          src="imgs/pizza-sizes.png"
+          src="\imgs\pizza-sizes.png"
           width="auto"
           height="200px"
           alt="pizza-sizes"
@@ -235,7 +235,7 @@ li{
         target="_blank"
       >
         <img
-          src="imgs/Pizza-Flavours-Name-in-Pakistan-With-Pictures-scaled.webp"
+          src="\imgs\Pizza-Flavours-Name-in-Pakistan-With-Pictures-scaled.webp"
           width="auto"
           ;
           height="300px"
@@ -266,26 +266,19 @@ li{
       <p>Pizza Media</p>
 
       <img
-        src="imgs/pizza-sizes-featured-image-770x420.png"
+        src="/imgs\pizza-sizes-featured-image-770x420.png"
         width="auto"
         height="300px"
         alt="A lot of pizzas"
       />
       <p>
-        <video
-          src="https://www.youtube.com/watch?v=PRn5iONxSQQ"
-          width="320"
-          height="240"
-          controls
-        >
-          Video not supported
-        </video>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/PRn5iONxSQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </p>
     </section>
 
     <section id="form">
       <hr />
-      <form>
+      <form action="https://formsubmit.co/pedrovini.silva@gmail.com" method="POST">
         <h2>Pizza Quiz</h2>
 
         <label for="flavorpizza"> What Flavor do you like</label>
@@ -300,7 +293,8 @@ li{
         <br /><br />
 
         <label for="size"> Size of Pizza </label>
-        <input type="text" name="size" placeholder="Medium" id="size" />
+        <input type="text" name="size" placeholder="Medium" id="size" 
+        required/>
         <br /><br />
 
         <label for="howmany"> How many do you eat </label>
@@ -311,6 +305,7 @@ li{
           name="howmany"
           placeholder="1"
           id="howmany"
+          required
         />
         <br /><br />
 
@@ -321,7 +316,8 @@ li{
           cols="40"
           name="whatelse"
           placeholder="Tell me more"
-          id="whatelse"/>
+          id="whatelse"
+          required/>
         <br /><br />
 
         
@@ -329,8 +325,7 @@ li{
           style="margin: auto;"
           type="submit" 
           value="Submit" 
-          >
-           <a href="mailto:pedrovini.silva@gmail.com"> SEND</a>
+          > Send
             </button>
 
           </nav>
